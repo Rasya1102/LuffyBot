@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.pinimg.com/1200x/88/b9/28/88b928a9906df5c4c274c7bce85db9da.jpg">
+    <title>LuffyMiniChatGame</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-info">
+            <img src="download.jpg" alt="bot" class="bot-avatar">
+            <div>
+            <h3>LuffyBot</h3>
+            <p class="status">DIbuat oleh Rasya Dengan sepenuh cinta </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-body" id="chat-body">
+        <div class="message bot">
+            <p id="pertanyaan"></p>
+        </div>
+    </div>
+
+    <!-- indikator ngetik -->
+    <div id="typing-indicator" class="typing hidden">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div class="chat-input">
+            <input id="jawaban" type="text" placeholder="Ketik pesan di sini..." autocomplete="off">
+            <button onclick="botStart()">Kirim</button>
+        </div>
+    </div>
+
+    <script src="bot.js"></script>
+</body>
+</html>
